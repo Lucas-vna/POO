@@ -9,6 +9,8 @@ public class Principal {
         
         nokia.imprimir();
         
+        nokia.setNome("SAMSUNG").setMarca("M123456");
+        
     }//principal
     
     
@@ -20,10 +22,10 @@ public class Principal {
     
 }
 
+
 //=============================================================================================
 
 //Calculadora
-
 package heranca;
 
 public class Calculadora extends Computador{
@@ -36,14 +38,31 @@ public class Calculadora extends Computador{
         super(nome, marca);
     }
     
-    @Override
+    //@Override
+    //spbrescrita
     public void imprimir(){
             
         System.out.println(this.nome + " " +this.marca);
             
     }//imprimir
     
+    //encadeamento de métodos
+    public Calculadora setNome(String nome){
+        this.nome=nome;
+        
+        return this;
+    }//set nome
+    public Calculadora setMarca(String marca){
+        this.marca=marca;
+        
+        return this;
+    }//set marca
+    
+    
+    
 }//class
+    
+
 
 //=============================================================================================
 
@@ -66,7 +85,9 @@ public class Computador {
     public void imprimir(){
         System.out.print("SUPER CLASSE");
     }
-     
+    
+    
 }
+
 
  
