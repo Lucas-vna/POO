@@ -11,19 +11,19 @@ public class Principal{
         Scanner scanner = new Scanner(System.in);
         ArrayList<Padaria> padarias = new ArrayList<>();
         int opcao = 0;
+        Padaria padaria = new Padaria();
         
-        
-         while (opcao != 2) {
-            System.out.println("Selecione uma opção:");
+         while (opcao != 3) {
+            System.out.println("\n Selecione uma opção:");
             System.out.println("1 - Adicionar padaria");
-            System.out.println("2 - Sair");
+            System.out.println("2 - Premiar funcionario do mês");
+            System.out.println("3 - Sair");
             opcao = scanner.nextInt();
             
 
             switch (opcao) {
                 case 1:
-                    Padaria padaria = new Padaria();
-
+                    
                     System.out.print("\n");
                     
                     System.out.print("Informe o nome da padaria: ");
@@ -65,6 +65,14 @@ public class Principal{
                     
                     break;
                 case 2:
+                    System.out.print("\n Informe a quantidade de funcionários: ");
+                    padaria.setqtdeFuncionarios(scanner.nextInt());
+                    System.out.print("\n");
+                    
+                    System.out.print("FUNCIONARIO SORTEADO: " + padaria.getFuncionarioSort());
+                    
+                    break;
+                case 3:
                     System.out.println("\n" + "Saindo...");
                     break;
                 default:
