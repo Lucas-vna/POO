@@ -20,7 +20,7 @@ public class Padaria{
         this.endereco = " ";
         this.vendasMensais = 0f;
         this.qtdeMaxPaes = 0;
-        this.qtdeFuncionarios = 1; 
+        this.qtdeFuncionarios = 0; 
     }
     
     
