@@ -9,7 +9,6 @@ public class Principal{
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
-        Cozinha cozinha = new Cozinha();
         ArrayList<Padaria> padarias = new ArrayList<>();
         int opcao = 0;
         
