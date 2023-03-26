@@ -82,8 +82,7 @@ public class Padaria{
                 "QUANTIDADE MAX DE PAES " + this.qtdeMaxPaes + "\n" +
                 "QUANTIDADE DE FUNCIONARIOS " + qtdeFuncionarios + "\n" +
                 "TIPOS DE REFEICAO: " + this.cozinha.tiposRefeicao + "\n" +
-                "QUANTIDADE DE PANELAS: " + this.cozinha.qtdePanelas + "\n" +
-                "FUNCIONARIO SORTEADO: " + getFuncionarioSort() + "\n"; 
+                "QUANTIDADE DE PANELAS: " + this.cozinha.qtdePanelas + "\n"; 
                  
     }
     
