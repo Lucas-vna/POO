@@ -1,0 +1,57 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package lista2;
+
+public class Restaurante extends Comodo{
+    protected int qtdeMesas;
+    protected int qtdeCadeiras;
+    Cozinha cozinha = new Cozinha("", 0, 0);
+    
+    
+    
+    public Restaurante(String nome, int qtdeMesas, int qtdeCadeiras){
+        this.nome = nome;
+        this.qtdeMesas = qtdeMesas;
+        this.qtdeCadeiras = qtdeCadeiras;
+    }
+    
+    public int getQtdeMesas(){
+        return qtdeMesas;
+    }
+    
+    public void setQtdeMesas(int qtdeMesas) {
+        this.qtdeMesas = qtdeMesas;
+    }
+    
+    public int getQtdeCadeiras() {
+        return qtdeCadeiras;
+    }
+    
+    public void setQtdeCadeiras(int qtdeCadeiras) {
+        this.qtdeCadeiras = qtdeCadeiras;
+    }
+    
+    public void setPedido(String pedido){
+        this.pedido = pedido;
+    }
+    
+//    public void setValor(double valor){
+//        this.valor = valor;
+//    }
+    
+    public void emitirComanda() {
+        System.out.println("Restaurante recebeu um pedido de cliente");
+        
+        cozinha.receberPedido(pedido, valor); 
+    }
+
+    
+    public double calcularPagamento() {
+        double valorTotal = valor * 1.1; // acrescenta 10% ao valor do pedido
+        System.out.println("Restaurante calculou o pagamento do pedido: R$ " + valorTotal);
+        return valorTotal;
+    }
+    
+}
