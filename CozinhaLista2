@@ -1,0 +1,47 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package lista2;
+
+
+
+public class Cozinha extends Comodo{
+     
+    protected int tiposRefeicao;
+    protected int qtdePanelas;
+    protected int qtdeRefeicao = 0;
+    //Restaurante rest = new Restaurante("", 0, 0);
+    
+    public Cozinha(String nome, int tiposRefeicao, int qtdePanela){
+        this.nome = nome;
+        this.tiposRefeicao = tiposRefeicao;
+        this.qtdePanelas = qtdePanela;
+    }
+    
+    public int getTiposRefeicao() {
+        return tiposRefeicao;
+    }
+    
+    public void setTiposRefeicao(int tiposRefeicao) {
+        this.tiposRefeicao = tiposRefeicao;
+    }
+    
+    public int getQtdePanelas() {
+        return qtdePanelas;
+    }
+    
+    public void setQtdePanelas(int qtdePanelas) {
+        this.qtdePanelas = qtdePanelas;
+    }
+    
+    
+    
+    public void receberPedido(String pedido, double valor) {
+        System.out.println("Cozinha recebeu um pedido do Restaurante");
+        System.out.println("Cozinha esta fazendo uma refeicao: " + pedido);
+
+        System.out.println("Preco do pedido sem 10%: R$ " + valor);
+    }
+    
+}
