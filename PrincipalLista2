@@ -1,0 +1,49 @@
+
+package lista2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Principal {
+
+    public static void main(String[] args) {
+        
+        List<Comodo> lista = new ArrayList();
+        Cozinha cozinha1 = new Cozinha("Cozinha 1", 10, 20);
+        Cozinha cozinha2 = new Cozinha("Cozinha 2", 8, 17);
+        Restaurante restaurante1 = new Restaurante("Restaurante 1", 20, 30);
+        Restaurante restaurante2 = new Restaurante("Restaurante 2", 30, 50);
+        
+        lista.add(cozinha1);
+        lista.add(restaurante1);
+        lista.add(cozinha2);
+        lista.add(restaurante2);
+        
+        
+        restaurante1.setPedido("Parmeja");
+        
+        
+        System.out.println("Nome do Restaurante: " + restaurante1.getNome());
+        System.out.println("Qtde de Mesas: " + restaurante1.getQtdeMesas());
+        System.out.println("Qtde de Cadeiras: " + restaurante1.getQtdeCadeiras());
+        System.out.println("Nome da Cozinha: " + cozinha1.getNome());
+        System.out.println("Tipos de Refeicao: " + cozinha1.getTiposRefeicao());
+        System.out.println("Qtde de Panelas: " + cozinha1.getQtdePanelas());
+        restaurante1.emitirComanda();
+        restaurante1.calcularPagamento();
+        
+        restaurante2.setPedido("Sorvete");
+        
+        
+        System.out.println("\nNome do Restaurante: " + restaurante2.getNome());
+        System.out.println("Qtde de Mesas: " + restaurante2.getQtdeMesas());
+        System.out.println("Qtde de Cadeiras: " + restaurante2.getQtdeCadeiras());
+        System.out.println("Nome da Cozinha: " + cozinha2.getNome());
+        System.out.println("Tipos de Refeicao: " + cozinha2.getTiposRefeicao());
+        System.out.println("Qtde de Panelas: " + cozinha2.getQtdePanelas());
+        restaurante2.emitirComanda();
+        restaurante2.calcularPagamento();
+    }
+    
+}
